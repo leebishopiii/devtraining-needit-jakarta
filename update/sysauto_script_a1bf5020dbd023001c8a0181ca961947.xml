@@ -27,19 +27,20 @@
 	// Write a log message for each overdue NeedIt Task Record
 	while(overdueNITasks.next()){
 		gs.info("Overdue NeedIt Task record = " + overdueNITasks.number);
+		gs.eventQueue('x_58872_needit.overdueNeedItTask',overdueNITasks,overdueNITasks.number,gs.getUserName(),'my_queue');
 	}]]></script>
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-29 20:28:06</sys_created_on>
         <sys_id>a1bf5020dbd023001c8a0181ca961947</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Find NeedIt Overdue Tasks</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sysauto_script_a1bf5020dbd023001c8a0181ca961947</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-29 20:55:28</sys_updated_on>
+        <sys_updated_on>2018-08-30 14:09:15</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>
